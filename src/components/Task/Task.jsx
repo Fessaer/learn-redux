@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { Form, ListGroup } from "react-bootstrap";
-import { toggleTask, removeTask } from "../store/actions";
+import { toggleTask, removeTask } from "../../store/tasks/actions";
 
 const Task = ({ task }) => {
   const { id, title, completed } = task;

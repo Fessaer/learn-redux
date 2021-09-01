@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Button } from "react-bootstrap";
-import * as actions from "../store/actions";
+import { fetchTodo } from "../../store/todoFetch/actions";
 
 export default function TodoFetch() {
   const dispatch = useDispatch();
 
   const handleGetTodo = () => {
-    dispatch(actions.fetchTodo());
+    dispatch(fetchTodo());
   };
 
   return (

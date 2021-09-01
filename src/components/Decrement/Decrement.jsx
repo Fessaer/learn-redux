@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Button, FormControl, InputGroup } from "react-bootstrap";
-import * as actions from "../store/actions";
+import { setDecrement } from "../../store/increment/actions";
 
 export default function Decrement() {
   const dispatch = useDispatch();
 
   const handleDecrement = () => {
-    dispatch(actions.Decrement());
+    dispatch(setDecrement());
   };
 
   return (
