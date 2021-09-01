@@ -6,6 +6,7 @@ import TaskList from "./components/TaskList";
 import AddNewTask from "./components/AddNewTask";
 import Decrement from "./components/Decrement";
 import Increment from "./components/Increment";
+import TodoFetch from "./components/TodoFetch";
 
 function App() {
   // Получаем наш state
@@ -27,6 +28,9 @@ function App() {
         </Col>
         <Col md={12}>
           <Decrement />
+        </Col>
+        <Col md={12}>
+          <TodoFetch />
         </Col>
       </Row>
       <Row>

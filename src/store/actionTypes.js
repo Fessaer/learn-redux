@@ -3,3 +3,7 @@ export const TASK_TOGGLE = "TASK_TOGGLE";
 export const TASK_REMOVE = "TASK_REMOVE";
 export const INCREMENT = "INCREMENT";
 export const DECREMENT = "DECREMENT";
+export const GETTODOS = "GETTODOS";
+// export const ADD_TODO_SUCCESS = "ADD_TODO_SUCCESS";
+// export const ADD_TODO_FAILURE = "ADD_TODO_FAILURE";
+// export const ADD_TODO_STARTED = "ADD_TODO_STARTED";

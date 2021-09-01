@@ -30,7 +30,7 @@ export default function reducer(state = { tasks: [], num: 0 }, action) {
       const removedTasks = state.tasks.filter(
         (task) => action.payload.id !== task.id
       );
-      return { ...state, task: removedTasks };
+      return { ...state, tasks: removedTasks };
 
     case actions.INCREMENT:
       const num = state.num + 1;
@@ -43,6 +43,10 @@ export default function reducer(state = { tasks: [], num: 0 }, action) {
       } else {
         return { ...state, num: 0 };
       }
+
+    case actions.GETTODOS:
+      console.log(action.payload);
+      return { ...state, todos: action.payload };
 
     default:
       return state;
